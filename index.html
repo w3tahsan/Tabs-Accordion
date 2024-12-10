@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .tabconent {
+        display: none;
+        animation: bbb 1s;
+      }
+      @keyframes bbb {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .item-details {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.35s ease;
+      }
+      .item-details.active {
+        overflow: hidden;
+      }
+      button.active_item {
+        color: #fff;
+        background-color: #c00 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header" id="btn_main">
+              <button class="btn btn-primary abc" id="tahsan">Tahsan</button>
+              <button class="btn btn-primary" id="rayan">Rayan</button>
+              <button class="btn btn-primary" id="alamin">Al-Amin</button>
+            </div>
+            <div class="card-body" id="tab_main">
+              <div class="item tabconent" id="tahsan">
+                <h2>Tahsan</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Laudantium, consequuntur.
+                </p>
+              </div>
+              <div class="item tabconent" id="rayan">
+                <h2>Rayan</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quidem, voluptas aperiam sint distinctio minima explicabo!
+                </p>
+              </div>
+              <div class="item tabconent" id="alamin">
+                <h2>Al-Amin</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Sequi nam sint alias impedit enim doloribus corporis eum
+                  quibusdam dignissimos repudiandae?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-8 m-auto">
+          <div class="accordion_main">
+            <div class="accordion-item border p-3">
+              <div class="item-title">
+                <a id="one" class="btn btn-success w-100 text-start"
+                  >MERN Stack Development.</a
+                >
+              </div>
+              <div class="item-details pt-3 default-active" id="one">
+                MERN Stack is a combination of four different technologies that
+                is used to develop a website in an efficient manner. In this
+                course, you can gain your expertise in three areas- Web
+                Development, Web Design and App Development. Most of the
+                companies nowadays are using the MERN Stack Programme for its
+                easily customizable, cost-effective features. Enroll in this
+                course to develop your skills in this field.
+              </div>
+            </div>
+            <div class="accordion-item border p-3">
+              <div class="item-title">
+                <a id="two" class="btn btn-success w-100 text-start"
+                  >App Development With Kotlin</a
+                >
+              </div>
+              <div class="item-details pt-3" id="two">
+                How would you feel if you start using an app developed by
+                yourself? It sounds more interesting in reality, where you
+                combine the programming language and frameworks to have an
+                excellent outcome. A study shows, the demand for app developers
+                is having an upward trend, which might increase by 24% by 2026.
+                New apps are replacing the old ones with improved features and
+                qualities. If you want to develop such a unique app, this course
+                is for you.
+              </div>
+            </div>
+            <div class="accordion-item border p-3">
+              <div class="item-title">
+                <a id="three" class="btn btn-success w-100 text-start"
+                  >Front-End Development with React</a
+                >
+              </div>
+              <div class="item-details pt-3" id="three">
+                React js is one of the most popular frameworks that you can use
+                to design your website interface. It ensures your convenience by
+                providing you a hassle-free, flexible work experience. In
+                addition, React js is built on an open source platform with an
+                extensive library that simplifies the complex coding.
+                Considering the feasibility, most of the developers prefer using
+                this framework, you can also have your expertise with our
+                advanced Front-End Development Course. Enroll now.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
